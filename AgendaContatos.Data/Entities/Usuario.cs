@@ -14,6 +14,10 @@ namespace AgendaContatos.Data.Entities
         public string Senha { get; set; }
         public DateTime DataCadastro { get; set; }
 
+        //relacionamento 1 para muitos (associações)
+        //1 usuário tem muitos contatos
+        public List<Contato> Contatos { get; set; }
+
     }
 
 }
